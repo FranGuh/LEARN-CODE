@@ -1,0 +1,12 @@
+## Fortalezas
+
+Asincronía y el Event Loop: Dominas el orden de ejecución del Event Loop. Entiendes perfectamente cómo JavaScript prioriza el stack sincrónico, las microtareas (Promesas) y las macrotareas (setTimeout), además de comprender el comportamiento de rechazo rápido (fail-fast) de Promise.all.
+Comparaciones y Coerción de Tipos: Tienes una excelente comprensión de cómo JavaScript evalúa y convierte los tipos de datos. Manejas sin problemas las diferencias entre `==` y `===`, la coerción matemática con los operadores `+` y `-`, y las peculiaridades como `Object.is(NaN, NaN)` o el resultado de `typeof null`.
+Fundamentos de Programación Funcional: Tienes claros los conceptos clave del paradigma funcional en JavaScript, como la definición de funciones puras, la importancia de evitar efectos secundarios (side effects) y cómo el estado interno puede ser protegido eficientemente mediante closures.
+
+## Aspectos a mejorar
+
+Scope (Ámbito), Hoisting y Contexto (this): Es necesario reforzar cómo se comporta el scope de `var` frente a `let`/`const` (especialmente en el contexto global de `window`), cómo el motor resuelve el hoisting cuando colisionan declaraciones de variables y funciones, y el comportamiento léxico de `this` al usar arrow functions dentro de objetos literales.
+Métodos Nativos de Arrays: Hubo confusiones en el comportamiento nativo de ciertos métodos. Recuerda que `.sort()` ordena alfabéticamente por defecto (incluso con números), que `.filter()` es la opción declarativa para extraer elementos (no `.forEach()`), y que `.reduce()` es útil para evitar múltiples iteraciones sobre arreglos masivos.
+Mutabilidad, Referencias y Copias: Aunque comprendes cómo interactúan el Stack y el Heap en asignaciones simples, debes repasar qué ocurre al reasignar un parámetro objeto dentro de una función (no muta la referencia original), el comportamiento superficial (shallow) de `Object.freeze()`, y cómo la desestructuración con el operador rest crea nuevos objetos en memoria.
+Operadores Lógicos Modernos: Repasa la diferencia fundamental entre el Nullish Coalescing (`??`) y el operador lógico OR (`||`). Es crucial entender cómo cada uno evalúa los valores 'falsy', particularmente el número `0`.
